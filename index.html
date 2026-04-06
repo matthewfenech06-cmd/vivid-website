@@ -305,8 +305,8 @@
     100% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 20px rgba(201,168,76,0.15)); }
   }
   @keyframes goldPulseSubtle {
-    0%, 100% { filter: drop-shadow(0 0 10px rgba(201,168,76,0.1)); }
-    50%       { filter: drop-shadow(0 0 35px rgba(201,168,76,0.35)); }
+    0%, 100% { filter: invert(1) drop-shadow(0 0 10px rgba(201,168,76,0.1)); }
+    50%       { filter: invert(1) drop-shadow(0 0 35px rgba(201,168,76,0.35)); }
   }
   @keyframes logoReveal {
     0% { opacity: 0; transform: scale(0.7) translateY(20px); filter: drop-shadow(0 2px 20px rgba(0,0,0,0.8)) blur(12px); }
@@ -554,8 +554,8 @@
   <div class="hero-grain"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">Malta's Premier Events Experience</p>
-    <img src="logo-black.svg" alt="Vivid Entertainment" id="heroLogo"
-      style="width:clamp(380px,52vw,780px);margin-bottom:8px;display:block;opacity:0;animation:logoPop 1s cubic-bezier(0.16,1,0.3,1) 0.2s forwards;filter:invert(1);">
+    <img src="logo-white.png" alt="Vivid Entertainment" id="heroLogo"
+      style="width:clamp(380px,52vw,780px);margin-bottom:8px;display:block;opacity:0;animation:logoPop 1s cubic-bezier(0.16,1,0.3,1) 0.2s forwards;">
     <p class="hero-tagline">Where the night begins.</p>
   </div>
 </section>
