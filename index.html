@@ -297,12 +297,13 @@
   .stat-num { transition: color 0.3s; }
 
   /* ── ANIMATIONS ── */
+  #heroLogo { filter: invert(1) !important; }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes logoPop {
-    0%   { opacity: 0; transform: scale(0.6); filter: drop-shadow(0 0 0px rgba(201,168,76,0)); }
-    60%  { opacity: 1; transform: scale(1.08); filter: drop-shadow(0 0 40px rgba(201,168,76,0.5)); }
-    80%  { transform: scale(0.97); filter: drop-shadow(0 0 15px rgba(201,168,76,0.2)); }
-    100% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 20px rgba(201,168,76,0.15)); }
+    0%   { opacity: 0; transform: scale(0.6); filter: invert(1) drop-shadow(0 0 0px rgba(201,168,76,0)); }
+    60%  { opacity: 1; transform: scale(1.08); filter: invert(1) drop-shadow(0 0 40px rgba(201,168,76,0.5)); }
+    80%  { transform: scale(0.97); filter: invert(1) drop-shadow(0 0 15px rgba(201,168,76,0.2)); }
+    100% { opacity: 1; transform: scale(1); filter: invert(1) drop-shadow(0 0 20px rgba(201,168,76,0.15)); }
   }
   @keyframes goldPulseSubtle {
     0%, 100% { filter: invert(1) drop-shadow(0 0 10px rgba(201,168,76,0.1)); }
@@ -554,7 +555,7 @@
   <div class="hero-grain"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">Malta's Premier Events Experience</p>
-    <img src="logo-white.png" alt="Vivid Entertainment" id="heroLogo"
+    <img src="logo-black.svg" alt="Vivid Entertainment" id="heroLogo"
       style="width:clamp(380px,52vw,780px);margin-bottom:8px;display:block;opacity:0;animation:logoPop 1s cubic-bezier(0.16,1,0.3,1) 0.2s forwards;">
     <p class="hero-tagline">Where the night begins.</p>
   </div>
